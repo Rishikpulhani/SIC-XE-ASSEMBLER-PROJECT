@@ -2,36 +2,40 @@
 
 A comprehensive implementation of a two-pass assembler for the SIC-XE (Simplified Instructional Computer - Extra Equipment) architecture, written in C++.
 
-## Features
+🚀 Features
+🧠 Core Functionality
 
-- **Two-Pass Assembly**: Complete implementation of both Pass 1 and Pass 2
-- **Control Sections**: Full support for multiple control sections with CSECT directive
-- **External References**: Support for EXTDEF and EXTREF directives
-- **All Instruction Formats**: Support for Format 1, 2, 3, and 4 instructions
-- **Addressing Modes**: 
-  - Immediate addressing (#operand)
-  - Indirect addressing (@operand)
-  - Indexed addressing (operand,X)
-  - PC-relative addressing
-  - Base-relative addressing
-  - Extended format addressing
-- **Directives Support**:
-  - START, END, CSECT
-  - EXTDEF, EXTREF
-  - RESW, RESB, WORD, BYTE
-  - BASE, NOBASE
-  - EQU, ORG
-  - LTORG (Literal pool generation)
-- **Literal Support**:
-  - Character literals (=C'text')
-  - Hexadecimal literals (=X'hex')
-  - Automatic literal pool creation with LTORG
-  - Automatic literal pool at END directive
-- **Output Generation**:
-  - Detailed listing file with addresses and object codes
-  - Standard object program with header, text, modification, and end records
-  - Proper text record segmentation for gaps (RESW/RESB)
-  - Complete modification records for external references
+Two-Pass Assembly — Complete Pass 1 (symbol/literal tables) and Pass 2 (object code generation)
+Control Sections — Multiple control sections via CSECT
+External Linking — Full support for EXTDEF and EXTREF
+Instruction Formats — Handles all SIC/XE formats (1, 2, 3, 4)
+
+⚙️ Addressing Modes
+
+Immediate (#operand)
+Indirect (@operand)
+Indexed (operand,X)
+PC-relative / Base-relative
+Extended format addressing (+opcode)
+
+📘 Directives
+
+Supports:
+START, END, CSECT, EXTDEF, EXTREF, RESW, RESB, WORD, BYTE,
+BASE, NOBASE, EQU, ORG, and LTORG
+
+💾 Literals
+
+- Character (=C'text')
+- Hexadecimal (=X'hex')
+- Automatic literal pool generation via LTORG or at program END
+
+🧾 Output
+
+- Listing File (.lst) — Line-by-line address, object code, and symbol table
+- Object File (.obj) — Standard object program format (Header, Text, Modification, End records)
+- Proper segmentation for RESW/RESB gaps
+- Complete modification records for externals
 
 ## Project Structure
 
