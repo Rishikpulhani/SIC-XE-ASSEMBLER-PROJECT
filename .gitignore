@@ -1,0 +1,56 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated output files
+*.lst
+*.obj
+
+# IDE and Editor files
+.vscode/
+.vs/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log
+
+# Build directories
+build/
+bin/
+obj/
+
+# Dependencies
+*.d
+
+# Core dumps
+core
+
+# Assembly test files (optional - uncomment if you don't want to track test outputs)
+# test.lst
+# test.obj
+# program.lst
+# program.obj
+
+# Test files for error handling
+test_use.asm
+test_org.asm
